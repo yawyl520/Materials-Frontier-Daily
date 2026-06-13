@@ -26,6 +26,8 @@
 
 [📖 Live Demo](https://thysrael.github.io/Horizon/) · [📋 Configuration Guide](https://thysrael.github.io/Horizon/configuration) · [简体中文](README_zh.md)
 
+This repository is based on [Thysrael/Horizon](https://github.com/Thysrael/Horizon), licensed under the [MIT License](LICENSE).
+
 </div>
 
 ## Screenshots

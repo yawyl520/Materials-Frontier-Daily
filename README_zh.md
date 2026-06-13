@@ -26,6 +26,8 @@
 
 [📖 在线演示](https://thysrael.github.io/Horizon/) · [📋 配置指南](https://thysrael.github.io/Horizon/configuration) · [English](README.md)
 
+本仓库基于 [Thysrael/Horizon](https://github.com/Thysrael/Horizon)，遵循 [MIT License](LICENSE) 开源协议。
+
 </div>
 
 ## 截图
