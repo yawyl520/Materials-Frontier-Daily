@@ -18,7 +18,7 @@
     "imap_server": "imap.qq.com",
     "imap_port": 993,
     "email_address": "",
-    "sender_name": "Horizon Daily",
+    "sender_name": "Materials Frontier Daily",
     "subscribe_keyword": "SUBSCRIBE",
     "unsubscribe_keyword": "UNSUBSCRIBE"
   },
@@ -26,93 +26,117 @@
     "github": [
       {
         "type": "repo_releases",
-        "owner": "openai",
-        "repo": "openai-python",
+        "owner": "materialsproject",
+        "repo": "pymatgen",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "computational-materials"
       },
       {
         "type": "repo_releases",
-        "owner": "anthropics",
-        "repo": "anthropic-sdk-python",
+        "owner": "materialsproject",
+        "repo": "mp-api",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "computational-materials"
       },
       {
         "type": "repo_releases",
-        "owner": "astral-sh",
-        "repo": "uv",
+        "owner": "deepmodeling",
+        "repo": "deepmd-kit",
         "enabled": true,
-        "category": "dev-tools"
+        "category": "computational-materials"
+      },
+      {
+        "type": "repo_releases",
+        "owner": "aiida-core",
+        "repo": "aiida-core",
+        "enabled": true,
+        "category": "computational-materials"
       }
     ],
     "hackernews": {
-      "enabled": true,
-      "fetch_top_stories": 20,
-      "min_score": 120
+      "enabled": false,
+      "fetch_top_stories": 10,
+      "min_score": 200
     },
     "rss": [
       {
-        "name": "OpenAI Blog",
-        "url": "https://openai.com/news/rss.xml",
+        "name": "arXiv Materials Science",
+        "url": "https://rss.arxiv.org/rss/cond-mat.mtrl-sci",
         "enabled": true,
-        "category": "ai-news"
+        "category": "preprints"
       },
       {
-        "name": "Anthropic News",
-        "url": "https://www.anthropic.com/news/rss.xml",
+        "name": "arXiv Soft Condensed Matter",
+        "url": "https://rss.arxiv.org/rss/cond-mat.soft",
         "enabled": true,
-        "category": "ai-news"
+        "category": "soft-materials"
       },
       {
-        "name": "Google AI Blog",
-        "url": "https://blog.google/technology/ai/rss/",
+        "name": "arXiv Mesoscale and Nanoscale Physics",
+        "url": "https://rss.arxiv.org/rss/cond-mat.mes-hall",
         "enabled": true,
-        "category": "ai-news"
+        "category": "nano-materials"
       },
       {
-        "name": "Simon Willison",
-        "url": "https://simonwillison.net/atom/everything/",
+        "name": "arXiv Strongly Correlated Electrons",
+        "url": "https://rss.arxiv.org/rss/cond-mat.str-el",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "quantum-materials"
       },
       {
-        "name": "Hugging Face Blog",
-        "url": "https://huggingface.co/blog/feed.xml",
+        "name": "Nature Materials",
+        "url": "https://www.nature.com/nmat/current_issue/rss/",
         "enabled": true,
-        "category": "ai-tools"
+        "category": "top-journals"
       },
       {
-        "name": "The Pragmatic Engineer",
-        "url": "https://blog.pragmaticengineer.com/rss/",
+        "name": "Nature Nanotechnology",
+        "url": "https://www.nature.com/nnano/current_issue/rss/",
         "enabled": true,
-        "category": "software-engineering"
+        "category": "nano-materials"
+      },
+      {
+        "name": "Nature Reviews Materials",
+        "url": "https://www.nature.com/natrevmats/current_issue/rss/",
+        "enabled": true,
+        "category": "reviews"
+      },
+      {
+        "name": "Nature Energy",
+        "url": "https://www.nature.com/nenergy/current_issue/rss/",
+        "enabled": true,
+        "category": "energy-materials"
+      },
+      {
+        "name": "npj Computational Materials",
+        "url": "https://www.nature.com/npjcompumats/current_issue/rss/",
+        "enabled": true,
+        "category": "computational-materials"
+      },
+      {
+        "name": "npj 2D Materials and Applications",
+        "url": "https://www.nature.com/npj2dmaterials/current_issue/rss/",
+        "enabled": true,
+        "category": "nano-materials"
+      },
+      {
+        "name": "npj Quantum Materials",
+        "url": "https://www.nature.com/npjquantmats/current_issue/rss/",
+        "enabled": true,
+        "category": "quantum-materials"
+      },
+      {
+        "name": "npj Materials Degradation",
+        "url": "https://www.nature.com/npjmatdeg/current_issue/rss/",
+        "enabled": true,
+        "category": "structural-materials"
       }
     ],
     "reddit": {
-      "enabled": true,
-      "subreddits": [
-        {
-          "subreddit": "LocalLLaMA",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 80,
-          "category": "ai-tools"
-        },
-        {
-          "subreddit": "MachineLearning",
-          "enabled": true,
-          "sort": "hot",
-          "time_filter": "day",
-          "fetch_limit": 10,
-          "min_score": 80,
-          "category": "machine-learning"
-        }
-      ],
+      "enabled": false,
+      "subreddits": [],
       "users": [],
-      "fetch_comments": 3
+      "fetch_comments": 0
     },
     "twitter": {
       "enabled": false,
@@ -132,24 +156,28 @@
     "ossinsight": {
       "enabled": false,
       "period": "past_24_hours",
-      "languages": ["All", "Python", "TypeScript"],
-      "keywords": [],
+      "languages": ["All", "Python"],
+      "keywords": ["materials", "chemistry", "simulation"],
       "min_stars": 50,
       "max_items": 20
     }
   },
   "filtering": {
     "ai_score_threshold": 6.5,
-    "time_window_hours": 24,
-    "max_items": 12,
+    "time_window_hours": 48,
+    "max_items": 16,
     "category_groups": {
-      "ai": {
-        "limit": 6,
-        "categories": ["ai-news", "ai-tools", "machine-learning"]
+      "frontier-papers": {
+        "limit": 8,
+        "categories": ["preprints", "top-journals", "reviews"]
       },
-      "engineering": {
-        "limit": 4,
-        "categories": ["software-engineering", "dev-tools"]
+      "materials-themes": {
+        "limit": 6,
+        "categories": ["energy-materials", "nano-materials", "quantum-materials", "soft-materials", "structural-materials"]
+      },
+      "tools": {
+        "limit": 3,
+        "categories": ["computational-materials"]
       }
     },
     "default_group": "other",
